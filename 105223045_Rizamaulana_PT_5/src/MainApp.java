@@ -2,32 +2,25 @@ class Person {
     private String name;
     private int age;
 
-    // Konstruktor
     public Person(String n, int a) {
         name = n;
         age = a;
     }
-
-    // Getter untuk mengakses variabel private
     public String getName() {
         return name;
     }
-
     public int getAge() {
         return age;
     }
-
     public void display() {
         System.out.println("Name: " + name + ", Age: " + age);
     }
 }
-
 class Employee extends Person {
     private double salary;
-
-    // Konstruktor dengan pemanggilan super()
+    
     public Employee(String n, int a, double s) {
-        super(n, a); // Memanggil konstruktor dari kelas induk (Person)
+        super(n, a); 
         salary = s;
     }
 
